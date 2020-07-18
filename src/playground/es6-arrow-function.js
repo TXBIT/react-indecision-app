@@ -16,10 +16,6 @@
 // console.log(square2(10));
 // console.log(squareArrow(12));
 
-// Challenge - Use arrow functions
-// getFirstName('Mike Smith') -> 'Mike'
-// Create regular arrow function
-// Create arrow function using shorthand syntax
 const getFirstName = (fullName) => {
   return fullName.split(' ')[0];
 };
