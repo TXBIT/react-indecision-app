@@ -40,13 +40,9 @@ const user = {
 // user.printPlacesLived();
 console.log(user.printPlacesLivedES6Syntax());
 
-// Challenge area
 const multiplier = {
-  // numbers - array of numbers
   numbers: [10, 20, 30],
-  // multiplyBy- single number
   multiplyBy: 3,
-  // multiply - return a new array where the number have been multiplied
   multiply() {
     return this.numbers.map((number) => number * this.multiplyBy);
   },
