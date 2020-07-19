@@ -32,12 +32,6 @@ class Student extends Person {
   }
 }
 
-// Traveler - Person
-// Add support for homeLocation
-// Override getGreeting
-// 1. Hi. I am Name. I'm visiting from homeLocation
-// 2. Hi. I am Name.
-
 class Traveler extends Person {
   constructor(name, age, homeLocation) {
     super(name, age);
