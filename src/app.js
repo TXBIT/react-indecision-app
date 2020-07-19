@@ -38,13 +38,14 @@ class Action extends React.Component {
   }
 }
 
-// Add Remove All button
-// Setup handleRemoveAll -> alert some message
-// Setup onClick to fire the method
-
 class Options extends React.Component {
+  constructor(props) {
+    super(props);
+    this.handleRemoveAll = this.handleRemoveAll.bind(this);
+  }
+
   handleRemoveAll() {
-    alert('Remove All');
+    console.log(this.props.options);
   }
 
   render() {
@@ -64,10 +65,6 @@ class Option extends React.Component {
     return <div>{this.props.option}</div>;
   }
 }
-
-// 1. Setup the form with the text input and submit button
-// 2. Wire up onSubmit
-// 3. handleAddOption -> fetch the value typed -> if value, then alert
 
 class AddOption extends React.Component {
   handleAddOption(e) {
@@ -97,8 +94,6 @@ class AddOption extends React.Component {
     );
   }
 }
-
-// Option -> Option component here
 
 const jsx = <IndecisionApp />;
 
