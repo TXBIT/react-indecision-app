@@ -13,11 +13,23 @@ class Counter extends React.Component {
     this.handleReset = this.handleReset.bind(this);
   }
 
-  handleAddOne() {}
+  handleAddOne() {
+    this.setState((prevState) => {
+      return { count: prevState.count + 1 };
+    });
+  }
 
-  handleMinusOne() {}
+  handleMinusOne() {
+    this.setState((prevState) => {
+      return { count: prevState.count - 1 };
+    });
+  }
 
-  handleReset() {}
+  handleReset() {
+    this.setState(() => {
+      return { count: 0 };
+    });
+  }
 
   render() {
     return (
