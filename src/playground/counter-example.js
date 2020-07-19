@@ -1,7 +1,3 @@
-// Create three methods: handleAddOne, handleMinusOne, handleReset
-// Use console.log to print method name
-// Wire up onClick & bind in the constructor
-
 class Counter extends React.Component {
   constructor(props) {
     super(props);
@@ -29,6 +25,8 @@ class Counter extends React.Component {
     this.setState(() => {
       return { count: 0 };
     });
+    // this.setState({ count: 0 });
+    // this.setState({ count: this.state.count + 1 });
   }
 
   render() {
