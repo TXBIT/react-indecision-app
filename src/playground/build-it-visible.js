@@ -1,5 +1,3 @@
-// VisibilityToggle - render, constructor, handleToggleVisibility
-// visibility -> false
 class VisibilityToggle extends React.Component {
   constructor(props) {
     super(props);
