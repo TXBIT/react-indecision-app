@@ -1,4 +1,3 @@
-// stateless functional component
 class IndecisionApp extends React.Component {
   constructor(props) {
     super(props);
@@ -10,6 +9,18 @@ class IndecisionApp extends React.Component {
     this.handlePick = this.handlePick.bind(this);
     this.handleAddOption = this.handleAddOption.bind(this);
     this.handleDeleteOption = this.handleDeleteOption.bind(this);
+  }
+
+  componentDidMount() {
+    console.log('Component Did Mount! Fetching Data...');
+  }
+
+  componentDidUpdate(prevProps, prevState) {
+    console.log('Component Did Update! Saving Data...');
+  }
+
+  componentWillUnmount() {
+    console.log('Component Will Unmount!');
   }
 
   handleDeleteOptions() {
