@@ -1,15 +1,11 @@
 import React from 'react';
 
 export default class AddOption extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      error: undefined,
-    };
-    this.handleAddOption = this.handleAddOption.bind(this);
-  }
+  state = {
+    error: undefined,
+  };
 
-  handleAddOption(e) {
+  handleAddOption = (e) => {
     e.preventDefault();
     let option = e.target.elements.option.value.trim();
 
@@ -27,7 +23,7 @@ export default class AddOption extends React.Component {
     // console.log(
     //   Object.values(e.target.elements).map((element) => element.value)
     // );
-  }
+  };
 
   render() {
     return (
